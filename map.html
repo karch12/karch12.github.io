@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polecane urządzenia</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="js/menu.js" defer></script> 
+    <script src="js/clock.js" defer></script> 
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <a href="#" class="hide-desktop">
+                    <img src="img/ham.svg" alt="toggle menu" class="menu" id="menu">
+                </a>
+    
+                <ul class="show-desktop hide-mobile" id="nav">
+                    <li id="exit" class="exit-btn hide-desktop">
+                        <img src="img/exit.svg" alt="exit menu">
+                    </li>
+                    <li>
+                        <a href="index.html">Strona glowna</a>
+                    </li>
+                    <li>
+                        <a href="fixes.html">Zgłoszenie naprawy</a>
+                    </li>
+                    <li>
+                        <a href="find_us.html">Gdzie nas szukać</a>
+                    </li>
+                    <li>
+                        <a href="graph.html">Wykres równania trygonometrycznego</a>
+                    </li>
+                    <li>
+                        <a href="map.html">Polecane urządzenia</a>
+                    </li>
+                    <li>
+                        <a href="canvas.html">Rezystor</a>
+                    </li>
+                    <li>
+                        <a href="rate.html">Opinie i ocena</a>
+                    </li>
+                </ul>
+            </nav>
+        </header> 
+
+        <section>
+            <h1>Wybierz godzinę lub kliknij na środek tarczy</h1>
+            <img src="img/zegar.jpg" alt="Zegar" usemap="#zegar" width="400" height="400">
+            <map name="zegar">
+              <area onclick="alert('12')" shape="circle" coords="200, 40, 40" alt="12" href="#">
+              <area onclick="alert('3')" shape="circle" coords="360, 200, 40" alt="3" href="#">
+              <area onclick="alert('6')" shape="circle" coords="200, 360, 40" alt="6" href="#">
+              <area onclick="alert('9')" shape="circle" coords="40, 200, 40" alt="9" href="#">
+              <area onclick="alert('środek')" shape="circle" coords="200, 200, 30" alt="tarcza" href="#">
+            </map>
+        </section>
+
+        <section>
+          <h2>Prawdziwy zegar powinien wyświetlać taką godzinę:</h2>
+          <div id="czas"></div>
+          <h3>Dzisiejsza data:</h3>
+          <div id="kalendarz"></div>
+        </section>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="container">
+                <p class="address">KARTECH ul. Kopernika 34A/7 <br>Świecie</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

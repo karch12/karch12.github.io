@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opinie i ocena</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="js/menu.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <a href="#" class="hide-desktop">
+                    <img src="img/ham.svg" alt="toggle menu" class="menu" id="menu">
+                </a>
+    
+                <ul class="show-desktop hide-mobile" id="nav">
+                    <li id="exit" class="exit-btn hide-desktop">
+                        <img src="img/exit.svg" alt="exit menu">
+                    </li>
+                    <li>
+                        <a href="index.html">Strona glowna</a>
+                    </li>
+                    <li>
+                        <a href="fixes.html">Zgłoszenie naprawy</a>
+                    </li>
+                    <li>
+                        <a href="find_us.html">Gdzie nas szukać</a>
+                    </li>
+                    <li>
+                        <a href="graph.html">Wykres równania trygonometrycznego</a>
+                    </li>
+                    <li>
+                        <a href="map.html">Polecane urządzenia</a>
+                    </li>
+                    <li>
+                        <a href="canvas.html">Rezystor</a>
+                    </li>
+                    <li>
+                        <a href="rate.html">Opinie i ocena</a>
+                    </li>
+                </ul>
+            </nav>
+        </header> 
+
+        <section>
+            <h1>Wystaw nam ocenę</h1>
+            <p class="subhead">
+                Oceń nasz sklep od 1 do 5               
+            </p>
+        </section>
+
+        
+    </div>
+
+    <div class="blue-container">
+        <div class="container">
+            <form action="mailto:contact@yourdomain.com"
+            method="POST"
+            enctype="multipart/form-data"
+            name="RateEmailForm">
+                <label for="fname">Imię:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+
+                <label for="rating">Ocena:</label>
+                <select name="rating" id="rating">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select> 
+                
+                <br>
+                <input type="submit" value="Wyslij">
+              </form>
+              
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="container">
+                <p class="address">KARTECH ul. Kopernika 34A/7 <br>Świecie</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wykres równania trygonometrycznego</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="js/menu.js" defer></script> 
+    <script src="js/wave.js" defer></script> 
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <a href="#" class="hide-desktop">
+                    <img src="img/ham.svg" alt="toggle menu" class="menu" id="menu">
+                </a>
+    
+                <ul class="show-desktop hide-mobile" id="nav">
+                    <li id="exit" class="exit-btn hide-desktop">
+                        <img src="img/exit.svg" alt="exit menu">
+                    </li>
+                    <li>
+                        <a href="index.html">Strona glowna</a>
+                    </li>
+                    <li>
+                        <a href="fixes.html">Zgłoszenie naprawy</a>
+                    </li>
+                    <li>
+                        <a href="find_us.html">Gdzie nas szukać</a>
+                    </li>
+                    <li>
+                        <a href="graph.html">Wykres równania trygonometrycznego</a>
+                    </li>
+                    <li>
+                        <a href="map.html">Polecane urządzenia</a>
+                    </li>
+                    <li>
+                        <a href="canvas.html">Rezystor</a>
+                    </li>
+                    <li>
+                        <a href="rate.html">Opinie i ocena</a>
+                    </li>
+                </ul>
+            </nav>
+        </header> 
+
+        <section>
+          <h3>Wykres równania trygonometrycznego y1*y2/(y1+y2)</h3>
+          <canvas class='canvas' id='wave' width='350' height='350'></canvas>
+          <form id='form' onsubmit='drawGraph(event)'>
+            <input type='submit' value='Wykreśl'/>
+            <label for="amp1">Amplituda pierwszej funkcji</label>
+            <input type='range'
+              id='amp1'
+              min='0.2'
+              max='5'
+              step='0.2'
+              name='amp1'
+              value='amp1'>
+            <label for="freq1">Częstotliwość pierwszej funkcji</label>
+            <input type='range'
+              id='freq1'
+              min='1'
+              max='10'
+              step='0.2'
+              name='freq1'
+              value='freq1'>
+            <label for="amp2">Amplituda drugiej funkcji</label>
+              <input type='range'
+                id='amp2'
+                min='0.2'
+                max='5'
+                step='0.2'
+                name='amp2'
+                value='amp2'>
+            <label for="freq2">Częstotliwość drugiej funkcji</label>
+              <input type='range'
+                id='freq2'
+                min='1'
+                max='10'
+                step='0.2'
+                name='freq2'
+                value='freq2'>
+          </form>
+          
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="container">
+                <p class="address">KARTECH ul. Kopernika 34A/7 <br>Świecie</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

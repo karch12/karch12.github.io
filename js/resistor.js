@@ -1,0 +1,20 @@
+//300x100 (x,y)
+const canvas = document.getElementById('resistor');
+const resistor = canvas.getContext('2d');
+resistor.beginPath();
+resistor.rect(0, 48, 50, 4);
+resistor.fill();
+resistor.rect(250, 48, 50, 4);
+resistor.fill();
+resistor.moveTo(100, 72);
+resistor.arc(80, 50, 30, 0.25*Math.PI, 1.75*Math.PI);
+resistor.stroke();
+resistor.moveTo(200, 28);
+resistor.arc(220, 50, 30, 1.25*Math.PI, 0.75*Math.PI, false);
+resistor.stroke();
+resistor.moveTo(100, 72);
+resistor.lineTo(200, 72);
+resistor.stroke();
+resistor.moveTo(100, 28);
+resistor.lineTo(200, 28);
+resistor.stroke();

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zgłoszenie naprawy</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="js/menu.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <a href="#" class="hide-desktop">
+                    <img src="img/ham.svg" alt="toggle menu" class="menu" id="menu">
+                </a>
+    
+                <ul class="show-desktop hide-mobile" id="nav">
+                    <li id="exit" class="exit-btn hide-desktop">
+                        <img src="img/exit.svg" alt="exit menu">
+                    </li>
+                    <li>
+                        <a href="index.html">Strona glowna</a>
+                    </li>
+                    <li>
+                        <a href="fixes.html">Zgłoszenie naprawy</a>
+                    </li>
+                    <li>
+                        <a href="find_us.html">Gdzie nas szukać</a>
+                    </li>
+                    <li>
+                        <a href="graph.html">Wykres równania trygonometrycznego</a>
+                    </li>
+                    <li>
+                        <a href="map.html">Polecane urządzenia</a>
+                    </li>
+                    <li>
+                        <a href="canvas.html">Rezystor</a>
+                    </li>
+                    <li>
+                        <a href="rate.html">Opinie i ocena</a>
+                    </li>
+                </ul>
+            </nav>
+        </header> 
+
+        <section>
+            <h1>Zgłoszenie naprawy</h1>
+            <p class="subhead">
+                Coś nie działa? Zgłos to tutaj               
+            </p>
+        </section>
+
+        
+    </div>
+
+    <div class="blue-container">
+        <div class="container">
+            <form action="mailto:contact@yourdomain.com"
+            method="POST"
+            enctype="multipart/form-data"
+            name="EmailForm">
+                <label for="fname">Imię:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="lname">Nazwisko:</label><br>
+                <input type="text" id="lname" name="lname">
+
+                <p>Rodzaj problemu:</p>
+                <input type="radio" id="wada-fabryczna" name="rodzaj_problemu" value="wada_fabryczna">
+                <label for="wada-fabryczna">Wada fabryczna</label><br>
+                <input type="radio" id="niekompletnosc-zestawu" name="rodzaj_problemu" value="niekompletnosc_zestawu">
+                <label for="niekompletnosc-zestawu">Niekompletność zestawu</label><br>
+                <input type="radio" id="inne" name="rodzaj_problemu" value="inne">
+                <label for="inne">Inne</label>
+                
+                <br>
+                <p>Forma rekompensaty:</p>
+                <input type="checkbox" id="zwrot-pieniedzy" name="zwrot-pieniedzy" value="zwrot">
+                <label for="zwrot-pieniedzy">Zwrot pieniedzy</label><br>
+                <input type="checkbox" id="karta-podarunkowa" name="karta-podarunkowa" value="karta_podarunkowa">
+                <label for="karta-podarunkowa">Karta podarunkowa</label><br>
+                <input type="checkbox" id="naprawa" name="naprawa" value="Naprawa">
+                <label for="naprawa">Naprawa</label>
+                
+                <br><br>
+                <label for="zdjecie">Dodaj zdjęcie usterki:</label>
+                <br>
+                <input type="file"
+                id="zdcjecie" name="zdjecie"
+                accept="image/png, image/jpeg">
+                
+                <br>
+                <input type="submit" value="Wyslij">
+              </form>
+              
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="container">
+                <p class="address">KARTECH ul. Kopernika 34A/7 <br>Świecie</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

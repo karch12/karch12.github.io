@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600");
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p, blockquote {
+    font-size: 0.9em;
+    line-height: 1.6em;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    padding: 0.8em 1.2em;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hide-mobile {
+    display: none;
+}
+
+.menu {
+    width: 25px;
+    margin-top: 45%;
+}
+
+h1, .subhead {
+    position: relative;
+    z-index: 3;
+}
+
+.subhead {
+    font-size: 1.1em;
+}
+
+.blue-container {
+    width: 100%;
+    background-color: #00C2FF;
+    color: white;
+    margin: 15% 0 0;
+    padding: 2em 0;
+    border-radius: 40px
+}
+
+.blue-container ul li {
+    margin-bottom: 3em;
+}
+
+.blue-container ul li p {
+    padding: 0 .5em;
+}
+
+h2 {
+    margin-top: 7%;
+}
+
+.footer-container {
+    width: 100%;
+    background-color: #3D444A;
+    color: white;
+    margin-top: 2em;
+    padding: 3em 0;
+}
+
+nav ul {
+    position: fixed;
+    width: 60%;
+    top: 0;
+    left: 0;
+    text-align: left;
+    background-color: rgb(34, 41, 44);
+    height: 100%;
+    z-index: 7;
+    padding-top: 3em;
+    padding-right: 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: 1em 0 1em 1em;
+    background-color: rgb(52, 59, 63);
+}
+
+nav ul li a:hover {
+    background-color: rgb(65, 73, 78);
+}
+
+.exit-btn {
+    margin-bottom: 1em;
+    margin-top: -1.3em;
+    text-align: right;
+    padding: 0 1.4em;
+}
+
+.exit-btn img {
+    width: 15px;
+    cursor: pointer;
+}
+
+.blue-container input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+.blue-container label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+.form-text {
+    font-size: 60px;
+}
+
+/* Style the submit button */
+.blue-container input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+.blue-container input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid white;
+}
+
+@media only screen and (min-width: 480px) {
+    h1 {
+        font-size: 3em;
+        margin: 0;
+    }
+
+    .subhead {
+        font-size: 1.4em;
+        margin-bottom: 12%;
+    }
+
+    .blue-container {
+        margin: 0;
+    }
+
+    .blue-container ul {
+        padding:0; 
+        margin:0;
+        display: flex;
+        list-style: none;
+        justify-content:center;
+    }
+
+    .blue-container ul li{
+        margin:0 2em;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .blue-container {
+        margin-bottom: 13%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .show-desktop {
+        display: block;
+        margin: 0 auto 13% auto;
+    }
+    
+    .hide-desktop {
+        display: none;
+    }
+    
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        height: 100px;
+        margin: 0;
+        padding: 0;
+    }
+    
+    nav ul {
+        position: inherit;
+        width: auto;
+        background: none;
+        height: auto;
+        display: inline-block;
+        width: 100%; 
+        text-align:center;
+    }
+    
+    nav ul li {
+        display:inline-block;
+    }
+    
+    nav ul li a {
+        color: black;
+        background: inherit;
+        text-align: right;
+        font-size: 0.58em;
+    }
+
+    nav ul li a:hover {
+        background-color: inherit;
+    }
+}
+
+.canvas {
+    border: 1px solid black;
+}
+
+#czas {
+    content: '';
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+}
